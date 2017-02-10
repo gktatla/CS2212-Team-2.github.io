@@ -21,16 +21,35 @@
       </header>
       <section>
         <h1>Project Plan Page</h1>
-        <p><a href="https://CS2212-Team-2.github.io">Home</a><br><br></p>
-        <p1>This is what is required for this page:<br><br></p1>
-        <p2> Use this page to propose any additional features your team would like to add to the project. Either in response to the returned proposal, or for something completely new, you must include:</p2>
-        <ul>
-          <li>A title for the new feature or component</li>
-          <li>A brief description</li>
-          <li>A detailed and itemized feasibility statement and implementation plan</li>
-          <li>A brief statement about the rest of the project’s dependency on this feature</li>
-        </ul>
+        <p><a href="https://CS2212-Team-2.github.io">Home</a></p>
+        <hr>
+        <p1><strong>Title of New Feature: </strong>Events<br></p1>
+        <p2><strong>Description</strong><br></p2>
+        <p3>The events function allows users to add events to their Gmail calendar. The user can add others (roommates/siblings/parents/children) to the event.  The restriction to attendees is the person must be a member of the same group (house). The scheduled event will populate the creator and attendees to their respective calendars. Users will view their Gmail calendar from our program.</p3>
+        <p4><strong>Feasibility</strong><br>The addition of an events function is feasible.  A successful implementation will require use of the google Gmail API. The function will require the events creator to make a secure connection to his/her calendar and the calendar of others. To determine feasibility, we have successfully tested this functionality using: https://developers.google.com/apis-explorer/#s/calendar/v3/ </p4><br>
+        <p5><strong>Dependancy</strong><br>The events function is dependent on the Task class and the google calendar API.  If the calendar function is unavailable, the program should work uninterrupted. </p5><br><br>
 
+
+       <p1><strong>Title of New Feature: </strong>Leaderboard<br></p1>
+        <p2><strong>Description</strong><br></p2>
+        <p3>The leaderboard tracks each house members’ performance at completing task and meeting financial obligations. The user will receive points if tasks and financial commitments are completed by due dates.  The user will lose points for non-compliance. The user will receive a grade based on the following equation:<br>Grade = (Points Earned)/(Total Points Available)<br>
+        Bonus/reward can be award to the leader at the end of each increment.</p3>
+        <p4><strong>Feasibility</strong><br>The implementation of the leaderboard is feasible.  A successful implementation will require the proper tracking and storing the user “Grade”.  We anticipate using a simple database to store and update the “Grade.”</p4><br>
+        <p5><strong>Dependancy</strong><br>The leader board function is dependent on the information feed to from the tasks and financial classes.  If either class fails, then the leaderboard will not work.  If the leaderboard function fails, its failure will not have a systemic impact on the proper functioning of the program.</p5><br><br>
+
+        <p1><strong>Title of New Feature: </strong>User analysis and recommendation <br></p1>
+        <p2><strong>Description</strong><br></p2>
+        <p3>An advance addition building on the leaderboard feature, where the program analyzes how the users grade patterns. If any patterns are found in how they are losing points, then we can provide recommendations or personal notifications to the user on how they can improve.</p3>
+        <p4><strong>Feasibility</strong><br>The implementation of the leaderboard is feasible.  A successful implementation will require to compare the resulting grade of an user for each week/month. Based on a threshold we can determine if the user is losing out on potential points because of failing a certain responsibility.
+        <br>E.g. Threshold 12 weeks and failure rate >75%
+        <br>Out of the past 12 weeks the user has failed to take-out the trash in 9 of the weeks resulting in a poor leaderboard placement.</p4><br>
+        <p5><strong>Dependancy</strong><br>This feature is dependent on the leaderboard as well as how it is implemented. However no other parts of the application will depend on this feature.</p5><br><br>
+
+        <p1><strong>Title of New Feature: </strong>Groceries, Toiletries and Misc Count <br></p1>
+        <p2><strong>Description</strong><br></p2>
+        <p3>This feature can keep a detailed list of all the “things” that housemates share and might need to buy on a weekly/monthly basis. Such as toiletries, some types of groceries, etc. The feature will also have an empty, low, full tag attached to each “thing”. E.g toilet paper “empty” (lol)</p3>
+        <p4><strong>Feasibility</strong><br>Implementation of this seems very simple. The user can enter what “things” they would like on this list and all the users can update the status tag. The class would have an object name “user enters” and a status tag.</p4><br>
+        <p5><strong>Dependancy</strong><br>This feature is independent of any other features and no other parts of the application will depend on this feature.</p5><br><br>
 
       </section>
       <footer>
