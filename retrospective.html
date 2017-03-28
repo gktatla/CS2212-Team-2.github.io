@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>CS2212b Team-2</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>CS2212b Team-2</h1>
+        <p class="view"><a href="https://github.com/CS2212-Team-2/CS2212-Team-2.github.io">View the Project on GitHub</a></p>
+
+      </header>
+      <section>
+        <h1>Project Retrospective</h1>
+        <p><a href="https://CS2212-Team-2.github.io">Home</a></p>
+        <hr>
+        <h2>Workflow<br></h2>
+        <ul>
+          <li>Dev branches from Master and each team member uses their own development branch for feature specific branches</li>
+          <li>Our team used various techniques and strategies in order to distribute tasks effictivly. We mainly used, githubs issues and the meetings in order to distribute tasks.</li>
+          <li><strong>Framworks</strong></li>
+          <li>Back-end: Grails, rest, groovy, java, hibernate. </li>
+          <li>Front-end: react, html, css, javascript, google API (for calendar and authentication).</li>
+        </ul>
+        </br>
+
+        <h2>MVC/Design Patterns<br></h2>
+        <ul>
+          <li>Everything was dependent on Rest.</li>
+          <li>Server-side REST APIs was implemented</li>
+          <li>Model: Grails domain classes<br>
+              View: Html, Javascript, css<br>
+              Controller: Grails controller</li>
+          <li>Communication is throught the controllers<br>
+          Eg: User logs in (to front end), data sent to controller method, controller method sends to appropriate model class, data is verified by the model (our database) and then sent back to the controller which sends it to the appropriate view.</li>
+          <li><strong>Improvments</strong></li>
+          <li>More comments, understand all the technology we were going to use beforehand, and consistency through out the application.</li>
+        </ul>
+        </br>
+
+        <h2>Refactor Retrospective<br></h2>
+        <ul>
+          <li><strong>Design Strengths</strong><br>  -Calendar<br>
+            -Notification<br>
+            -CSS<br>
+            -Login and authentication<br>
+            -The use of seperate stylesheet instead of using in-line css made styling very simple.</li>
+
+          <li><strong>Design Weaknesses</strong></li>
+          <li>Communication with backend. We had to use the URL in the browser to get variables instead of using fetch (in one instance).</li>
+        </ul>
+        </br>
+
+        <h2>Project Retrospective<br></h2>
+        <ul>
+          <li><strong>Project Strengths</strong></li>
+          <li>We communicated well between team members, we handed almost everything in on time, we generally used our frameworks and technologies properly, and we had high attendance at all meetings. Overall, we think we did pretty well on the project.</li>
+          <li><strong>What to improve</strong></li>
+          <li>UI design, integration.</li>
+          <li>We liked how Grails had everything in one place, everything fit together. It was simple once we learned it.
+Domain classes were also simple.
+CSS, HTML, and Javascript were relatively simple.</li>
+      <li>We didn't like Grails' guide and resources had limited useful information making it difficult to learn. There were many conflicting ways to do a single task.
+Grails was also difficult to setup, and had long load times.
+Fetch concept was a lot of work, having to go to backend every time we needed something.</li>
+        </ul>
+        </br>
+
+
+
+
+        <br>
+        <br>
+      </section>
+    </div>
+  </body>
+</html>
